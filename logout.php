@@ -1,0 +1,9 @@
+<?php
+session_start();
+session_destroy();
+session_unset();
+unset($_SESSION['oturum']);
+unset($_SESSION['name']);
+unset($_SESSION['pass']);
+header("Location:index.php");
+?>
